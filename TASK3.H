@@ -51,6 +51,7 @@ enum BlockState  {BLOCK_CLEAR = 0, /**< BLOCK_CLEAR  is the initial state of a b
  *
  * \enum ShipState
  *
+
  * Represents the states a battle ship (see class Ship) can have.
  *
  */

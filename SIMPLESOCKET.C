@@ -19,7 +19,7 @@ C++ client example using sockets
 #include <unistd.h> //contains various constants
 #include <sys/types.h> //contains a number of basic derived types that should be used whenever appropriate
 #include <netinet/in.h> //contains constants and structures needed for internet domain addresses
-
+#include <sstream>
 
 #include <cstdio> // standard input and output library
 #include <cstdlib> // this includes functions regarding memory allocation
@@ -32,6 +32,8 @@ C++ client example using sockets
 
 
 #include "SIMPLESOCKET.H"
+
+using namespace TASK3;
 
 using namespace std;
 
@@ -192,3 +194,49 @@ string TCPserver::response(string incomingMsg){
 string TCPserver::myResponse(string input){
 	return string("NO DATA YET");
 }
+
+MyTCPserver::MyTCPserver (int port, int maxDataSizeRecv) : TCPserver(port,maxDataSizeRecv)
+{
+	w_= new World;
+
+
+}
+
+string MyTCPserver::myResponse (string input)
+{
+	int x, y , r;
+	std::stringstream ss;
+
+	//abfrage string "NEWGAME"
+	if (input.compare(0,7,"NEWGAME")==0 )
+	{
+		delete w_;
+		w_ =new World();
+		w_ -> printBoard();
+		return string ("OK");
+	}
+
+	//abfrage string "COORD["
+	if (input.compare (0,6,"COORD[")==0)
+	{
+		if (2!=sscanf(input.c_str(),"COORD[%d,%d]",&x,&y))
+		{
+			return string ("RES[-1]");
+		}
+		else
+		{
+			r = w_ -> shoot (x,y);
+			ss<<"RES["<<r<<"]";
+			return ss.str();
+		}
+	}
+
+
+
+	return string ("UNKNOWN_COMD");
+
+
+}
+
+
+

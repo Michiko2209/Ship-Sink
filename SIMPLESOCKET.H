@@ -19,7 +19,9 @@
 
 #include <string>
 #include <arpa/inet.h> //inet_addr
+#include "TASK3.H"
 
+using namespace TASK3;
 
 using namespace std;
 
@@ -148,6 +150,17 @@ private:
 	 *
 	 */
 	string response(string incomingMsg);
+
+};
+
+class MyTCPserver : public TCPserver
+{
+protected:
+	World *w_;
+	string myResponse (string input);
+
+public:
+	MyTCPserver (int port, int maxDataSizeRecv);
 
 };
 
