@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d4/dff/classTASK6_1_1ITestItem.html" title="Interface class of unit testing classes. In general a test item conaitns either a a specific test or ..." alt="" coords="5,31,133,57"/>
+<area shape="rect" id="node2" href="$df/d22/classTASK6_1_1TestItem.html" title="Implementation of the core functions for all derived classes of the unit test framework. " alt="" coords="181,31,305,57"/>
+<area shape="rect" id="node3" href="$d3/d67/classTASK6_1_1TestCase.html" title="Implementation of the class for defining a test case. " alt="" coords="353,5,483,32"/>
+<area shape="rect" id="node4" href="$d7/d0f/classTASK6_1_1TestSuite.html" title="This class implements a test suite for unit testing. " alt="" coords="354,56,482,83"/>
+<area shape="rect" id="node5" href="$d4/d9a/classTASK6_1_1UnitTest.html" title="Implements the unit test class. " alt="" coords="531,56,653,83"/>
+</map>

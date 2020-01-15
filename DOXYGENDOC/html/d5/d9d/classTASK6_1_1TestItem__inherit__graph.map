@@ -1,0 +1,6 @@
+<map id="TASK6::TestItem" name="TASK6::TestItem">
+<area shape="rect" id="node3" href="$d3/d67/classTASK6_1_1TestCase.html" title="Implementation of the class for defining a test case. " alt="" coords="5,155,135,181"/>
+<area shape="rect" id="node4" href="$d7/d0f/classTASK6_1_1TestSuite.html" title="This class implements a test suite for unit testing. " alt="" coords="159,155,287,181"/>
+<area shape="rect" id="node2" href="$d4/dff/classTASK6_1_1ITestItem.html" title="Interface class of unit testing classes. In general a test item conaitns either a a specific test or ..." alt="" coords="82,5,210,32"/>
+<area shape="rect" id="node5" href="$d4/d9a/classTASK6_1_1UnitTest.html" title="Implements the unit test class. " alt="" coords="162,229,285,256"/>
+</map>
